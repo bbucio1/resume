@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 5%);
+  --muted: hsl(210, 40%, 98%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 5%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 5%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --primary: hsl(222, 84%, 5%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 84%, 5%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222, 84%, 5%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(222, 84%, 5%);
+  --radius: 0.5rem;
+  --navy-600: hsl(223, 79%, 26%);
+  --navy-500: hsl(217, 91%, 60%);
+  --navy-400: hsl(213, 93%, 68%);
+  --navy-100: hsl(214, 95%, 93%);
+  --navy-800: hsl(223, 79%, 16%);
+  --navy-700: hsl(223, 79%, 21%);
+  --slate-50: hsl(210, 40%, 98%);
+  --green-100: hsl(149, 80%, 90%);
+  --green-500: hsl(142, 71%, 45%);
+  --green-800: hsl(158, 64%, 22%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(210, 40%, 98%);
+  --primary-foreground: hsl(222, 84%, 5%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(216, 12%, 84%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased bg-background text-foreground;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+  
+  .section-padding-sm {
+    @apply py-12 md:py-20;
+  }
+  
+  .text-navy-600 {
+    color: hsl(223, 79%, 26%);
+  }
+  
+  .text-navy-500 {
+    color: hsl(217, 91%, 60%);
+  }
+  
+  .text-navy-400 {
+    color: hsl(213, 93%, 68%);
+  }
+  
+  .text-navy-100 {
+    color: hsl(214, 95%, 93%);
+  }
+  
+  .text-navy-200 {
+    color: hsl(214, 95%, 85%);
+  }
+  
+  .text-navy-800 {
+    color: hsl(223, 79%, 16%);
+  }
+  
+  .bg-navy-600 {
+    background-color: hsl(223, 79%, 26%);
+  }
+  
+  .bg-navy-500 {
+    background-color: hsl(217, 91%, 60%);
+  }
+  
+  .bg-navy-400 {
+    background-color: hsl(213, 93%, 68%);
+  }
+  
+  .bg-navy-100 {
+    background-color: hsl(214, 95%, 93%);
+  }
+  
+  .bg-navy-700 {
+    background-color: hsl(223, 79%, 21%);
+  }
+  
+  .bg-slate-50 {
+    background-color: hsl(210, 40%, 98%);
+  }
+  
+  .bg-green-100 {
+    background-color: hsl(149, 80%, 90%);
+  }
+  
+  .text-green-500 {
+    color: hsl(142, 71%, 45%);
+  }
+  
+  .text-green-800 {
+    color: hsl(158, 64%, 22%);
+  }
+  
+  .hover\:bg-navy-700:hover {
+    background-color: hsl(223, 79%, 21%);
+  }
+  
+  .hover\:text-navy-600:hover {
+    color: hsl(223, 79%, 26%);
+  }
+  
+  .border-navy-500 {
+    border-color: hsl(217, 91%, 60%);
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+}
