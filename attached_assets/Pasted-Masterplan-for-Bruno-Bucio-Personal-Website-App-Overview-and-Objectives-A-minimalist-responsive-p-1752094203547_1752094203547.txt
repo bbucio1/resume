@@ -1,0 +1,62 @@
+Masterplan for Bruno Bucio Personal Website
+
+App Overview and Objectives
+
+A minimalist, responsive personal website for Bruno Bucio Chávez aimed at showcasing his background to potential employers. The site will include his academic and professional experience, skills, contact details, and a downloadable CV.
+
+Target Audience
+	•	Potential employers in finance, business management, and related fields.
+
+Core Features and Functionality
+	•	Home/Introduction section with name, title, and photo placeholder
+	•	About Me section summarizing Bruno’s professional background
+	•	Education section listing institutions, degrees, and relevant programs
+	•	Experience section outlining key roles and achievements
+	•	Skills section categorized into technical, languages, and soft skills
+	•	Contact section with email, phone, LinkedIn, and website link
+	•	Downloadable CV in PDF format
+
+High-Level Technical Stack Recommendations
+	•	Frontend: Static site (HTML, CSS, optional JS)
+	•	Framework (optional): Astro, Hugo, or Next.js (with static export)
+	•	Hosting: GitHub Pages, Netlify, or Vercel
+	•	Assets: Placeholder image for profile, CV PDF hosted with the site files
+
+Conceptual Data Model
+
+As a static site, no dynamic data model is needed. Content is structured as follows:
+	•	profile: name, intro text, image URL
+	•	education[]: school, degree, duration, highlights
+	•	experience[]: role, company, duration, accomplishments
+	•	skills: technical, language, soft skills
+	•	contact: email, phone, LinkedIn, website URL
+
+User Interface Design Principles
+	•	Clean, minimalist layout with responsive design
+	•	Sans-serif fonts for readability (e.g., Inter, Roboto, or Helvetica)
+	•	Simple navigation, likely a sticky top bar with section anchors
+	•	Soft neutral color palette (e.g., white, gray, navy accents)
+	•	Clear CTAs for viewing contact info and downloading CV
+
+Security Considerations
+	•	No contact form; only displays contact info
+	•	No user input, so no risk of injection or spam
+	•	Use HTTPS hosting for secure connection
+
+Development Phases or Milestones
+	1.	Planning & Design: Outline content and wireframes (if desired)
+	2.	Development: Build the static site structure and layout
+	3.	Testing: Ensure mobile responsiveness and browser compatibility
+	4.	Deployment: Host on GitHub Pages, Netlify, or Vercel
+	5.	Final Touches: Upload real photo and CV when available
+
+Potential Challenges and Solutions
+	•	CV file hosting: Ensure PDF is included in repo or hosted securely
+	•	Mobile layout: Test across devices to ensure consistency
+	•	Placeholder management: Clearly label sections to update later
+
+Future Expansion Possibilities
+	•	Add projects or blog section
+	•	Include testimonials or recommendations
+	•	Integrate a contact form if backend added later
+	•	Support multiple languages if needed
