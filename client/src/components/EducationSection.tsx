@@ -3,16 +3,22 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function EducationSection() {
   const education = [
     {
-      degree: "Bachelor of Science in Finance",
-      institution: "Universidad Ejemplo - Mexico City",
-      duration: "2020 - 2024",
-      description: "Comprehensive program covering financial analysis, corporate finance, investment management, and business strategy. Relevant coursework included Financial Modeling, Risk Management, International Finance, and Business Ethics."
+      degree: "Bachelor of Finance & Business Management",
+      institution: "Universidad Panamericana - Mexico City",
+      duration: "Aug 2022 - Dec 2026",
+      description: "GPA: 3.76. Member of the Student Society. Comprehensive program covering financial analysis, corporate finance, investment management, and business strategy."
     },
     {
-      degree: "Certificate in Business Management",
-      institution: "Instituto de Gestión Empresarial",
-      duration: "2023",
-      description: "Specialized certification program focusing on leadership principles, organizational behavior, project management, and strategic planning methodologies."
+      degree: "Bachelor's Exchange Abroad",
+      institution: "UC Berkeley - California, United States",
+      duration: "Summer 2025",
+      description: "Specialized studies in Economics, Politics, AI, and Data at one of the world's leading universities."
+    },
+    {
+      degree: "Pre-collegiate Studies",
+      institution: "Gustavson School of Business, University of Victoria - Canada",
+      duration: "Summer 2022",
+      description: "International Summer for Business Management program focusing on global business perspectives and management principles."
     }
   ];
 

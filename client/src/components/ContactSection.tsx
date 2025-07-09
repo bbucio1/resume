@@ -6,26 +6,26 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      content: "bruno.bucio@email.com",
-      link: "mailto:bruno.bucio@email.com"
+      content: "brfc03@gmail.com",
+      link: "mailto:brfc03@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+52 55 1234 5678",
-      link: "tel:+525512345678"
+      content: "+52 55 7408 2070",
+      link: "tel:+525574082070"
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
-      content: "linkedin.com/in/brunobucio",
-      link: "https://linkedin.com/in/brunobucio"
+      content: "linkedin.com/in/bruno-bucio",
+      link: "https://www.linkedin.com/in/bruno-bucio"
     },
     {
       icon: Globe,
-      title: "Website",
-      content: "brunobucio.com",
-      link: "https://brunobucio.com"
+      title: "Location",
+      content: "Mexico City, Mexico",
+      link: "#"
     }
   ];
 

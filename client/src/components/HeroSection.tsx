@@ -34,8 +34,9 @@ export default function HeroSection() {
               Finance & Business Management Professional
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Passionate about driving business growth through strategic financial planning and innovative management solutions. 
-              Seeking opportunities to leverage analytical skills and leadership experience in dynamic organizations.
+              Business Management and Finance student at Universidad Panamericana with experience in corporate finance, 
+              financial modeling, and strategic sales. Experienced in private debt fund operations, digital business development, 
+              and cross-functional team leadership in fast-paced, high-performance environments.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button

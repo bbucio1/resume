@@ -1,30 +1,41 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Laptop, Globe, Users } from "lucide-react";
+import { Laptop, Globe, Users, Heart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export default function SkillsSection() {
   const skills = {
     technical: [
-      "Excel Advanced",
       "Financial Modeling",
-      "Bloomberg Terminal",
-      "SQL",
-      "Power BI",
-      "Tableau",
-      "Python (Basic)"
+      "Business Analysis",
+      "Market Research",
+      "Strategic Planning",
+      "CRM Tools",
+      "Macabacus",
+      "Notion",
+      "Chatbot Automation",
+      "Google Workspace",
+      "Microsoft Office",
+      "Canva",
+      "Meta Business Suite",
+      "Python",
+      "VSB"
     ],
     languages: [
       { name: "Spanish", level: "Native" },
-      { name: "English", level: "Fluent" },
-      { name: "Portuguese", level: "Intermediate" }
+      { name: "English", level: "C1" },
+      { name: "French", level: "DELF B1" }
     ],
     soft: [
-      "Leadership",
       "Analytical Thinking",
-      "Problem Solving",
-      "Communication",
+      "Strategic Problem Solving",
+      "Attention to Detail",
+      "Effective Communication",
+      "Client Relationship Management",
+      "Time Management",
+      "Adaptability",
       "Team Collaboration",
-      "Adaptability"
+      "Initiative",
+      "Data-driven Decision Making"
     ]
   };
 
@@ -36,7 +47,7 @@ export default function SkillsSection() {
           <div className="w-20 h-1 bg-navy-500 mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Technical Skills */}
           <Card className="bg-slate-50 border border-gray-200">
             <CardContent className="p-8">
@@ -85,6 +96,60 @@ export default function SkillsSection() {
                     {skill}
                   </Badge>
                 ))}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Interests Section */}
+        <div className="mt-12">
+          <Card className="bg-slate-50 border border-gray-200">
+            <CardContent className="p-8">
+              <div className="flex items-center mb-6">
+                <Heart className="text-navy-500 h-8 w-8 mr-3" />
+                <h3 className="text-xl font-bold text-gray-900">Interests & Hobbies</h3>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-3">Professional</h4>
+                  <div className="space-y-2">
+                    <Badge variant="secondary" className="bg-navy-100 text-navy-800 mr-2 mb-2">
+                      Financial Podcasts
+                    </Badge>
+                    <Badge variant="secondary" className="bg-navy-100 text-navy-800 mr-2 mb-2">
+                      Business Podcasts
+                    </Badge>
+                    <Badge variant="secondary" className="bg-navy-100 text-navy-800 mr-2 mb-2">
+                      Entrepreneurship
+                    </Badge>
+                    <Badge variant="secondary" className="bg-navy-100 text-navy-800 mr-2 mb-2">
+                      Technology Trends
+                    </Badge>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-3">Sports</h4>
+                  <div className="space-y-2">
+                    <Badge variant="secondary" className="bg-green-100 text-green-800 mr-2 mb-2">
+                      Tennis
+                    </Badge>
+                    <Badge variant="secondary" className="bg-green-100 text-green-800 mr-2 mb-2">
+                      Padel
+                    </Badge>
+                    <Badge variant="secondary" className="bg-green-100 text-green-800 mr-2 mb-2">
+                      Soccer
+                    </Badge>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-800 mb-3">Learning</h4>
+                  <div className="space-y-2">
+                    <p className="text-gray-600 text-sm">
+                      Continuously exploring new financial markets, business strategies, and emerging technologies 
+                      to stay ahead in the dynamic world of finance and business.
+                    </p>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>

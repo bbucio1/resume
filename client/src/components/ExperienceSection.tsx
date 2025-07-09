@@ -4,23 +4,26 @@ import { CheckCircle } from "lucide-react";
 export default function ExperienceSection() {
   const experience = [
     {
-      role: "Financial Analyst Intern",
-      company: "ABC Financial Services",
-      duration: "Jun 2023 - Dec 2023",
+      role: "Junior Financial Analyst (Winter Internship)",
+      company: "Alta Real Estate Fund",
+      duration: "Nov 2024 - Feb 2025",
       achievements: [
-        "Developed comprehensive financial models for investment analysis, improving decision-making accuracy by 15%",
-        "Collaborated with senior analysts on portfolio risk assessment projects",
-        "Prepared detailed reports and presentations for executive stakeholders"
+        "Built detailed financial models for mid-market debt deals ($30M+), supporting investment committees in structuring and credit analysis",
+        "Created professional investor presentations, increasing pitch quality and team productivity by 20%",
+        "Streamlined approval workflows for debt structures by coordinating with cross-functional teams, improving deal turnaround time",
+        "Joined meetings with partners and key clients, gaining exposure to live deal execution and investor strategy",
+        "Implemented Notion to centralize processes, increasing task tracking and internal communication efficiency by 25%"
       ]
     },
     {
-      role: "Business Development Assistant",
-      company: "XYZ Consulting Group",
-      duration: "Jan 2023 - May 2023",
+      role: "Project Management Intern",
+      company: "XBD Orthodontics",
+      duration: "Aug 2023 - Sep 2024",
       achievements: [
-        "Conducted market research and competitive analysis for client projects",
-        "Assisted in developing strategic business plans for SME clients",
-        "Maintained client databases and coordinated project timelines"
+        "Negotiated with Chinese suppliers, securing favorable pricing and quality, reducing procurement costs by 10%",
+        "Led pricing strategy and monthly promotion planning through product and market analysis, increasing sales and engagement",
+        "Deployed chatbot automation, improving client service productivity by 40% and drastically cutting response times",
+        "Managed cross-functional teams and executed data-driven pricing strategies"
       ]
     }
   ];

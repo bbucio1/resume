@@ -13,16 +13,18 @@ export default function AboutSection() {
           <Card className="bg-white shadow-sm border border-gray-200">
             <CardContent className="p-8 md:p-12">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                With a strong foundation in finance and business management, I bring an analytical mindset and strategic approach to every challenge. 
-                My academic background has equipped me with comprehensive knowledge of financial principles, market analysis, and organizational behavior.
+                I am a Business Management and Finance student at Universidad Panamericana with hands-on experience in corporate finance, 
+                financial modeling, client relationship management, and strategic sales. I have worked at a private debt fund supporting 
+                deal structuring, preparing investor presentations, and participating in meetings with company owners and key stakeholders.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Throughout my studies and professional experiences, I have developed expertise in financial modeling, risk assessment, and business strategy development. 
-                I am particularly passionate about leveraging data-driven insights to inform decision-making and drive sustainable business growth.
+                Additionally, I have led the development of a new digital business line, managed cross-functional teams, and executed 
+                pricing strategies based on market analysis. My experience includes building detailed financial models for mid-market 
+                debt deals ($30M+), supporting investment committees, and streamlining operational processes.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                I thrive in collaborative environments and am committed to continuous learning and professional development. 
-                My goal is to contribute to organizations that value innovation, integrity, and excellence in their pursuit of business objectives.
+                I bring a combination of analytical rigor, commercial awareness, and execution focus. I am passionate about finance, 
+                technology, and contributing to meaningful projects that drive growth and success in fast-paced, high-performance environments.
               </p>
             </CardContent>
           </Card>
