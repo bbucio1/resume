@@ -1,4 +1,4 @@
-import { Mail, Download, User } from "lucide-react";
+import { Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
@@ -57,9 +57,13 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex-shrink-0">
-            {/* Professional headshot placeholder */}
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-navy-400 to-navy-600 flex items-center justify-center shadow-2xl">
-              <User className="text-white text-6xl md:text-8xl opacity-50" />
+            {/* Professional headshot */}
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+              <img 
+                src="/bruno-profile.jpg" 
+                alt="Bruno Bucio Chávez - Professional headshot" 
+                className="w-full h-full object-cover object-center"
+              />
             </div>
           </div>
         </div>
