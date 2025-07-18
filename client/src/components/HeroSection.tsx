@@ -1,7 +1,10 @@
-import { Mail, Download } from "lucide-react";
+import { Mail, Download, MessageCircle, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function HeroSection() {
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+
   const scrollToContact = () => {
     const element = document.getElementById("contact");
     if (element) {
@@ -22,6 +25,14 @@ export default function HeroSection() {
     link.click();
   };
 
+  const openChatbot = () => {
+    setIsChatbotOpen(true);
+  };
+
+  const closeChatbot = () => {
+    setIsChatbotOpen(false);
+  };
+
   return (
     <section id="home" className="section-padding pt-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +49,7 @@ export default function HeroSection() {
               financial modeling, and strategic sales. Experienced in private debt fund operations, digital business development, 
               and cross-functional team leadership in fast-paced, high-performance environments.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={scrollToContact}
                 className="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 text-base font-medium"
@@ -54,23 +65,14 @@ export default function HeroSection() {
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </Button>
-            </div>
-            
-            {/* AI Chatbot */}
-            <div className="mt-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4 text-center md:text-left">
-                Chat with Bruno's AI Assistant
-              </h3>
-              <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-                <iframe
-                  src="https://www.chatbase.co/chatbot-iframe/cfk-35IMMQuae23x63K7M"
-                  width="100%"
-                  style={{height: "100%", minHeight: "700px"}}
-                  frameBorder="0"
-                  title="Bruno's AI Assistant"
-                  className="rounded-lg"
-                />
-              </div>
+              <Button
+                onClick={openChatbot}
+                variant="outline"
+                className="border-navy-500 text-navy-600 hover:bg-navy-50 px-6 py-3 text-base font-medium"
+              >
+                <MessageCircle className="mr-2 h-4 w-4" />
+                Chat with AI
+              </Button>
             </div>
           </div>
           <div className="flex-shrink-0">
@@ -85,6 +87,40 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* Chatbot Modal */}
+      {isChatbotOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg shadow-2xl w-full max-w-4xl h-full max-h-[90vh] flex flex-col">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between p-4 border-b border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900">
+                Chat with Bruno's AI Assistant
+              </h3>
+              <Button
+                onClick={closeChatbot}
+                variant="ghost"
+                size="icon"
+                className="text-gray-400 hover:text-gray-600"
+              >
+                <X className="h-6 w-6" />
+              </Button>
+            </div>
+            
+            {/* Modal Content */}
+            <div className="flex-1 overflow-hidden">
+              <iframe
+                src="https://www.chatbase.co/chatbot-iframe/cfk-35IMMQuae23x63K7M"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                title="Bruno's AI Assistant"
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
