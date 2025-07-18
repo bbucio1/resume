@@ -78,6 +78,8 @@ Preferred communication style: Simple, everyday language.
 - Contact links (real email, phone, LinkedIn profile)
 - Skills section with categorized technical, language, and soft skills
 - Interests section showcasing professional and personal interests
+- AI chatbot assistant for interactive visitor engagement and inquiries
+- Professional headshot display in hero section
 
 ## External Dependencies
 
@@ -146,3 +148,6 @@ Preferred communication style: Simple, everyday language.
 - ✓ Added interests and hobbies section showcasing professional and personal interests
 - ✓ Updated CV file with complete authentic content
 - ✓ Improved SEO metadata with accurate descriptions and keywords
+- ✓ Integrated Bruno's professional headshot photo in the hero section
+- ✓ Added AI chatbot assistant in hero section for interactive visitor engagement
+- ✓ Configured Express server to properly serve static files from public directory

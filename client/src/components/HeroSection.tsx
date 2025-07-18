@@ -38,7 +38,7 @@ export default function HeroSection() {
               financial modeling, and strategic sales. Experienced in private debt fund operations, digital business development, 
               and cross-functional team leadership in fast-paced, high-performance environments.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
                 onClick={scrollToContact}
                 className="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 text-base font-medium"
@@ -54,6 +54,23 @@ export default function HeroSection() {
                 <Download className="mr-2 h-4 w-4" />
                 Download CV
               </Button>
+            </div>
+            
+            {/* AI Chatbot */}
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-4 text-center md:text-left">
+                Chat with Bruno's AI Assistant
+              </h3>
+              <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+                <iframe
+                  src="https://www.chatbase.co/chatbot-iframe/cfk-35IMMQuae23x63K7M"
+                  width="100%"
+                  style={{height: "100%", minHeight: "700px"}}
+                  frameBorder="0"
+                  title="Bruno's AI Assistant"
+                  className="rounded-lg"
+                />
+              </div>
             </div>
           </div>
           <div className="flex-shrink-0">
